@@ -1,6 +1,6 @@
 variable "aws_region" {
   type        = string
-  default     = "us-east-1a"
+  default     = "us-east-2"
   description = "The ARN of the S3 bucket to use for the application."
 }
 variable "aws_s3_bucket_arn" {
@@ -27,4 +27,5 @@ variable "app_name" {
   type        = string
   description = "The name of the application."
 }
+
 
