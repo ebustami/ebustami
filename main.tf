@@ -93,7 +93,7 @@ resource "aws_route_table_association" "public" {
 resource "aws_instance" "web" {
 # ami                         = "ami-0e1a3a59369c81682" 
   ami                         = "ami-0fa3fe0fa7920f68e"
-  instance_type               = "t2.nano"
+  instance_type               = "t2.micro"
   count                       = "1"
   subnet_id                   = aws_subnet.public.id
   vpc_security_group_ids      = [aws_security_group.web_sg.id]
